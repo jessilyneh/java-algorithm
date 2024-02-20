@@ -3,10 +3,14 @@
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  *---------------------------------------------------------------------------------------*/
 
-package com.mycompany.app;
+ package com.mycompany.app;
 
-public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello Remote World!");
-    }
-}
+ import java.util.Arrays;
+ 
+ public class App {
+     static String[] planets = {"Mercurio", "Vênus", "Terra", "Marte", "Júpiter"}; // Inicializa o array com valores
+ 
+     public static void main(String[] args) {
+         System.out.println("Planetas: " + Arrays.toString(planets));
+     }
+ }
