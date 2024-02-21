@@ -8,9 +8,15 @@
  import java.util.Arrays;
  
  public class App {
-     static String[] planets = {"Mercurio", "Vênus", "Terra", "Marte", "Júpiter"}; // Inicializa o array com valores
  
      public static void main(String[] args) {
-         System.out.println("Planetas: " + Arrays.toString(planets));
+        String[] planets = {"Mercurio", "Vênus", "Terra", "Marte", "Júpiter"};
+        System.out.println("Planetas: " + Arrays.toString(planets));
+ 
+        for (int i = planets.length - 1; i > 0; i--) {
+            planets[1] = planets[i - 1];
+        }
+         
+        System.out.println("Planetas após a modificação: " + Arrays.toString(planets));
      }
  }
